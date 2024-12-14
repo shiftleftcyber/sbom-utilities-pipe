@@ -24,7 +24,7 @@ definitions:
           - echo "Linting Dockerfile(s)"
           - hadolint Dockerfile || echo "found linting issues in Dockerfile"
     - step: &build-test
-        image: golang:1.21.1-alpine3.18
+        image: golang:1.22-alpine3.20
         name: 'Build & Test'
         script:
           - apk add --no-cache make bash
@@ -34,12 +34,12 @@ definitions:
           - "bin/*"
           - "coverage/*"
     - step: &go-formatter
-        image: golang:1.21.1-alpine3.18
+        image: golang:1.22-alpine3.20
         name: 'Check Go Formatting'
         script:
           - gofmt -s -d $(find . -name "*.go")
     - step: &go-lint-yourself
-        image: golang:1.21.1-alpine3.18
+        image: golang:1.22-alpine3.20
         name: 'Go Linter'
         script:
           - wget -O- -nv https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s v1.54.2
@@ -55,7 +55,7 @@ definitions:
             - apt-get update
             - DEBIAN_FRONTEND=noninteractive apt-get -y upgrade
             - apt-get install -y curl
-            - curl -sSfL https://raw.githubusercontent.com/anchore/syft/main/install.sh | sh -s -- -b /usr/local/bin v1.0.1
+            - curl -sSfL https://raw.githubusercontent.com/anchore/syft/main/install.sh | sh -s -- -b /usr/local/bin v1.18.0
             - docker load --input "${BITBUCKET_REPO_SLUG}.tar"
             - mkdir sbom_output
             - syft "${BITBUCKET_REPO_SLUG}:local" --output cyclonedx-json@1.4 >> sbom_output/${BITBUCKET_REPO_SLUG}_cyclonedx-sbom.json
