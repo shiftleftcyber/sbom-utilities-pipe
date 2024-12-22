@@ -1,5 +1,16 @@
 # Bitbucket Pipelines Pipe: sBOM Utilities
 
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/shiftleftcyber/sbom-utilities-pipe)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=ccideas1_sbom-utilities-pipe&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=ccideas1_sbom-utilities-pipe)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=ccideas1_sbom-utilities-pipe&metric=bugs)](https://sonarcloud.io/summary/new_code?id=ccideas1_sbom-utilities-pipe)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=ccideas1_sbom-utilities-pipe&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=ccideas1_sbom-utilities-pipe)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=ccideas1_sbom-utilities-pipe&metric=coverage)](https://sonarcloud.io/summary/new_code?id=ccideas1_sbom-utilities-pipe)
+[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=ccideas1_sbom-utilities-pipe&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=ccideas1_sbom-utilities-pipe)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=ccideas1_sbom-utilities-pipe&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=ccideas1_sbom-utilities-pipe)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=ccideas1_sbom-utilities-pipe&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=ccideas1_sbom-utilities-pipe)
+
+
+
 A Bitbucket Pipe containing a collection of open source tools to perform
 various types of additionl analysis on a CycloneDX or SPDX sBOM (Software Bill of Materials).
 
