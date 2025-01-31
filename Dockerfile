@@ -16,9 +16,9 @@ ARG ARCH
 
 ENV SBOM_UTILITIES_MODULE_HOME="/opt/sbom-utilities" \
     BOMBER_VERSION="0.5.1" \
-    OSV_SCANNER_VERSION="v1.9.1" \
-    SBOMQS_VERSION="v0.2.3" \
-    GRYPE_VERSION="v0.86.0"
+    OSV_SCANNER_VERSION="v1.9.2" \
+    SBOMQS_VERSION="v1.0.0" \
+    GRYPE_VERSION="v0.87.0"
     
 ARG BOMBER_URL="https://github.com/devops-kung-fu/bomber/releases/download/v${BOMBER_VERSION}/bomber_${BOMBER_VERSION}_linux_${ARCH}.tar.gz" \
     BOMBER_FILENAME="bomber_${BOMBER_VERSION}_linux_${ARCH}.tar.gz" \

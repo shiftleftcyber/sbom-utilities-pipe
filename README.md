@@ -1,4 +1,4 @@
-# SBOM Utilities Pipe
+# ShiftSBOM-Utils
 
 [![SonarQube Cloud](https://sonarcloud.io/images/project_badges/sonarcloud-highlight.svg)](https://sonarcloud.io/summary/new_code?id=ccideas1_sbom-utilities-pipe)
 
@@ -14,9 +14,9 @@
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/shiftleftcyber/sbom-utilities-pipe)
 
 
-
-A Bitbucket Pipe containing a collection of open source tools to perform
-various types of additionl analysis on a CycloneDX or SPDX sBOM (Software Bill of Materials).
+ShiftSBOM-Utils is a pure client-side Bitbucket Pipe containing a collection of open source tools to perform
+various types of additionl analysis on a CycloneDX or SPDX sBOM (Software Bill of Materials). No subscriptions,
+server access, or API keys are required.
 
 The official copy this project is hosted on [Bitbucket](https://bitbucket.org/ccideas1/cyclonedx-npm-pipe/src/main/).
 In order to reach a diverse audience a copy of the repo also exists in [GitHub](https://github.com/ccideas/sbom-utilities-pipe).
@@ -38,14 +38,7 @@ The following tooling/functionally is currently available in this pipe
 
 ### Future Tools & Featurs
 
-The following are the next set of tools/features which will be incorported into this pipe. To requrst other tooling/features or to
-vote to have a specific tool/feature integreted next, [open an issue](https://github.com/ccideas/sbom-utilities-pipe/issues)
-
-| Tool/Feature | Description |
-| ------------ | ----------- |
-| sBOM Signing | Sign the sBOM using your priviate key to prove ownership |
-
-And more
+To requrst other tooling/features or to vote to have a specific tool/feature integreted next, [open an issue](https://github.com/ccideas/sbom-utilities-pipe/issues)
 
 ## YAML Definition
 
